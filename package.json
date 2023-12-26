@@ -1,0 +1,21 @@
+{
+  "name": "instagram-project-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startapp" : "python3 manage.py startapp $APP_NAME",
+    "server" : "python3 manage.py runserver 0.0.0.0:8000",
+    "makemigrate" : "python3 manage.py makemigrations",
+    "migrate" : "python3 manage.py migrate",
+    "shellplus" : "python3 manage.py shell_plus",
+    "sqlplus" : "python3 manage.py shell_plus --print-sql",
+    "diagram" : "python3 manage.py graph_models -a --dot -o model_diagram.dot",
+    "pngdot" : "dot -Tpng model_diagram.dot dot -o model_diagram.png",
+    "jupyter" : "jupyter notebook --no-browser"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
